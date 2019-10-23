@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Servicio de Articulos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />    
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Registro de Articulos</h1>
+    </div>
+    <div class="container-fluid mx-auto">
+        <div class="row">
+                    <form>
+                        <h1>Articulos</h1>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Nombre:</span>
+                            </div>
+                            <input type="text" class="form-control" id="nombre" placeholder="Los rojos" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Minutos:</span>
+                            </div>
+                            <input type="number" class="form-control" id="minutos" placeholder="15" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">(Opcional) Posición:</span>
+                            </div>
+                             <input type="number" class="form-control" id="posicion" placeholder="0" value="0" aria-describedby="basic-addon1">
+                        </div>
+                        <button type="button" class="btn mb-3 btn-primary center-block" id="agregar">Agregar</button>
+                    </form>
+                    <br>
+        </div>
+        <div>
+            <form>
+                <h1>Recorrido</h1>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Bases:</span>
+                    </div>
+                    <select name="" id="bases">
+                        <option value="null">--Seleccione una base de inicio--</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Hora de inicio:</span>
+                    </div>
+                    <input type="time" class="form-control" id="HoraInicio" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Hora de termino:</span>
+                    </div>
+                     <input type="time" class="form-control" id="HoraTermino" aria-describedby="basic-addon1">
+                </div>
+                <button type="button" class="btn mb-3 btn-primary center-block" id="Crear">Crear</button>
+            </form>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Buscar:</span>
+                    </div>
+                    <input type="text" class="form-control" id="buscador" placeholder="Leche" aria-describedby="basic-addon1">
+                    <button type="button" class="btn mb-3 btn-primary center-block" id="buscar">Buscar</button>
+                </div>
+                <button type="button" class="btn mb-3 btn-primary center-block" id="Mostrar">Mostrar Reporte</button>    
+                <table id="registro" class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Minutos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body"></tbody>
+                </table>
+                <br>
+                <div id="Reporte">
+                    <h3>Reporte</h3>
+
+                </div>
+                <div id="ReporteInverso">
+                    <h3>Reporte Inverso</h3>
+
+                </div>
+                <div id="Recorrido">
+                    <h3>Recorrido</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<script src="./Main.js" type="module"></script>
+</body>
+</html>
